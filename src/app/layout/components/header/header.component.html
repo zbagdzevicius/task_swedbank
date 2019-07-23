@@ -1,0 +1,12 @@
+<header>
+    <nav>
+        <dl>
+            <dt 
+            *ngFor="let language of availableLanguages"
+            [ngClass]="{'currentLangue': language===currentLanguage}"
+            >
+                {{language}}
+            </dt>
+        </dl>
+    </nav>
+</header>

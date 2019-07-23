@@ -1,0 +1,150 @@
+{
+    "lading": {
+        "title": "Consumer loan",
+        "headline": "Loans that help",
+        "specialOffer": "Special offer: 50% discount on the fee with a code VASARA until 11.08.2019.",
+        "benefitList": [
+            "Borrow from 500 up to 20 000 € without collateral.",
+            "Money is transferred to the account immediately after the conclusion of the contract.",
+            "It is possible to make early repayments without any additional fees."
+        ],
+        "duration": "It takes only 1-2 minutes to fill loan application.",
+        "note": "Please note, that by using financial services you assume financial obligations. Improper execution of financial obligations may adversely affect your credit history and raise the cost of borrowing, and it can also cause initiation of enforced recovery."
+    },
+    "credit": {
+        "currency": "€",
+        "title": "Small loan application",
+        "navigation": {
+            "next": "Forward &#9664;",
+            "back": "&#9664 Back;"
+        },
+        "info": "Submission of an application is not considered to be your obligation to sign a credit agreement. After you receive a proposal from the bank, we recommend considering it before taking a decision to conclude a credit agreement.",
+        "steps": [
+            "Application",
+            "Additional data",
+            "Personal data",
+            "Send application"
+        ],
+        "step1": {
+            "application": {
+                "amount": {
+                    "text": "Loan amount",
+                    "from": 500,
+                    "to": 20000
+                },
+                "term": {
+                    "text": "Loan term",
+                    "from": 6,
+                    "to": 60
+                },
+                "payDay": {
+                    "text": "Day of repayment of principal and payment of interest",
+                    "select": [
+                        3,
+                        12,
+                        27
+                    ]
+                }
+            },
+            "Income": {
+                "subtitle": "Income and obligations data",
+                "warning": "Your income must be at least 350 EUR per month after tax. If you take a loan with a co-borrower, total income of a family (co-borrower) must be at least 700 EUR per month after tax.",
+                "amount": {
+                    "text": "Monthly salary after taxes",
+                    "more": "Indicate the earnings which you receive \"in hands\" (after taxes) per month."
+                }
+            }
+        },
+        "step2": {
+            "subtitle": "Extended data",
+            "education": {
+                "text": "Education",
+                "select": [
+                    "Secondary",
+                    "Primary",
+                    "College",
+                    "Higher"
+                ]
+            },
+            "position": {
+                "text": "Position held",
+                "select": [
+                    "Worker",
+                    "Owner",
+                    "Student"
+                ]
+            },
+            "area": {
+                "text": "Business area of your employer",
+                "select": [
+                    "Information Technologies",
+                    "Health",
+                    "Construction",
+                    "Other"
+                ]
+            },
+            "employement": {
+                "text": "Time employed",
+                "select": [
+                    "Trial period",
+                    "Up to 1 year",
+                    "Up to 2 years",
+                    "Up to 3 years",
+                    "Up to 4 years",
+                    "Up to 5 years",
+                    "More than 5 years"
+                ]
+            }
+        },
+        "step3": {
+            "subtitle": "Personal data",
+            "contractType": {
+                "text": "Type of labour contract",
+                "select": [
+                    "Open-end",
+                    "Fixed term",
+                    "Other"
+                ]
+            },
+            "maritalStatus": {
+                "text": "Marital status",
+                "select": [
+                    "Single",
+                    "Married",
+                    "Divorced"
+                ]
+            },
+            "phone": {
+                "text": "Phone",
+                "languages": {
+                    "lt": "+370",
+                    "se": "+46"
+                }
+            }
+        },
+        "step4": {
+            "table": {
+                "title": "Summary",
+                "fieldsToDisplay": [
+                    "amount",
+                    "term",
+                    "amount",
+                    "phone"
+                ]
+            },
+            "disclaimer": [
+                "1. I confirm that the provided information is true, valid and complete. If this confirmation appears to be wrong, Swedbank, AB (hereinafter – the Bank) may refuse the requested financing or unilaterally terminate the agreement concluded on the basis of this application;",
+                "2. I confirm that (i) I have got acquainted and agree with the General Conditions of Dealing with and Servicing the Customers of the Bank and their annex 'Principles of Processing Personal Data' which is published at www.swedbank.lt and available at the Bank's customer servicing branches,and (ii) I am aware that in observance of the aforementioned Principles of Processing Personal Data the Bank has the right to obtain my personal data from persons processing them in order to assess my creditworthiness and financial risk and to manage the debt when granting the financing to me or other person for whom I provide suretyship, and also when using such financing;",
+                "3. I agree that at the Bank's request the State Social Insurance Fund Board, the State Enterprise Centre of Registers, UAB Creditinfo Lietuva and financial institutions may provide to the Bank my personal data available to them (the forename and surname, personal identification number, address, the types, amounts and fulfilment deadlines of financial and/or property obligations applied in respect of which a positive or negative decision was made, the data about fulfilment of my all obligations, the data about my workplace, income, types and sources of income, marital status, number of children and other data necessary for the assessment of creditworthiness and indebtedness) so that the Bank can assess my creditworthiness and financial risk and manage the debt when granting the financing to me or other person for whom I provide suretyship, and also when using such financing;",
+                "4. I confirm that I am aware that the Bank can assess my creditworthiness with respect to the requested consumer credit to be granted to me or other person for whom I provide suretyship and take a decision on granting of the credit automatically. For the purpose of taking an automatic decision the Bank may collect and process the data specified above in this document from the aforementioned sources and other entities (e.g., public registers, financial institutions, the Bank of Lithuania).** NB: If you are unwilling to have the decision taken automatically, please enter the respective reference in the 'Comments' field of the application.",
+                "5. I confirm that during the last 10 (ten) years I was not declared insolvent/bankrupt, and at the time of submission of this application have not filed and am not going to file a petition for my personal bankruptcy with the respective authority;",
+                "6. I confirm that I am aware that if I apply for an insurance or any other service provided by the entity of the Bank's Group, the Bank will transmit to such entity the data necessary for the provision of the requested service;"
+            ],
+            "agreement": {
+                "agree": "I agree",
+                "disagree": "I disagree that “Swedbank”, AB may apply with SODRA"
+            },
+            "submit": "Send application"
+        }
+    }
+}

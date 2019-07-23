@@ -1,0 +1,150 @@
+{
+    "landing": {
+        "title": "Vartojimo paskola",
+        "headline": "paskolos, kurios padeda",
+        "specialOffer": "Specialus pasiūlymas: 50% nuolaida sutarties administravimo mokesčiui su kodu VASARA.",
+        "benefitList": [
+            "Paskola nuo 500 iki 20 000 Eur be užstato.",
+            "Pinigus pervesime Jums į sąskaitą iš karto po sutarties sudarymo.",
+            "Pasiskolintą sumą ar jos dalį galėsite grąžinti anksčiau laiko be papildomų mokesčių."
+        ],
+        "duration": "Paraišką užpildysite vos per keletą minučių.",
+        "note": "Atkreipiame dėmesį, kad naudodamiesi finansavimo paslaugomis Jūs prisiimate finansinius įsipareigojimus. Netinkamas finansinių įsipareigojimų vykdymas gali daryti neigiamą įtaką Jūsų kredito istorijai, pabranginti skolinimąsi, taip pat gali būti pradėtas priverstinis išieškojimas."
+    },
+    "credit": {
+        "currency": "€",
+        "title": "Vartojimo paskolos paraiška",
+        "navigation": {
+            "next": "Pirmyn &#9664;",
+            "back": "&#9664; Atgal"
+        },
+        "info": "Paraiškos pateikimas nėra Jūsų įsipareigojimas pasirašyti kredito sutartį. Gavus banko pasiūlymą, rekomenduojame jį apsvarstyti prieš priimant sprendimą dėl kredito sutarties sudarymo.",
+        "steps": [
+            "Paraiška",
+            "Papildomi duomenys",
+            "Asmeniniai duomenys",
+            "Siuntimas"
+        ],
+        "step1": {
+            "application": {
+                "amount": {
+                    "text": "Paskolos suma",
+                    "from": 500,
+                    "to": 20000
+                },
+                "term": {
+                    "text": "Paskolos terminas",
+                    "from": 6,
+                    "to": 60
+                },
+                "payDay": {
+                    "text": "Paskolos ir palūkanų mokėjimo diena",
+                    "select": [
+                        3,
+                        12,
+                        27
+                    ]
+                }
+            },
+            "Income": {
+                "subtitle": "Pajamos ir įsipareigojimai",
+                "warning": "Jūsų pajamos atskaičius mokesčius turi būti ne mažesnės nei 350 Eur / mėn. Jei paskolą imate su bendraskoliu, bendros šeimos (bendraskolių) pajamos, atskaičius mokesčius, turėtų būti ne mažesnės nei 700 Eur / mėn.",
+                "salary": {
+                    "text": "Mėnesinis atlyginimas atskaičius mokesčius",
+                    "more": "Nurodykite \"į rankas\" per mėnesį jūsų gaunamas oficialias pajamas."
+                }
+            }
+        },
+        "step2": {
+            "subtitle": "Papildomi duomenys",
+            "education": {
+                "text": "Išsilavinimas",
+                "select": [
+                    "Pradinis",
+                    "Pagrindinis",
+                    "Aukštesnysis",
+                    "Aukštasis"
+                ]
+            },
+            "position": {
+                "text": "Užimamos pareigos",
+                "select": [
+                    "Darbininkas",
+                    "Savininkas",
+                    "Studentas"
+                ]
+            },
+            "area": {
+                "text": "Įstaigos, kurioje dirbate, veiklos sritis",
+                "select": [
+                    "Informacinės technologijos",
+                    "Sveikata",
+                    "Statybos",
+                    "Kita"
+                ]
+            },
+            "employement": {
+                "text": "Darbo trukmė dabartinėje darbovietėje",
+                "select": [
+                    "Bandomasis laikotarpis",
+                    "Iki 1 metų",
+                    "Iki 2 metų",
+                    "Iki 3 metų",
+                    "Iki 4 metų",
+                    "Iki 5 metų",
+                    "Virš 5 metų"
+                ]
+            }
+        },
+        "step3": {
+            "subtitle": "Asmeniniai duomenys",
+            "contractType": {
+                "text": "Darbo sutarties tipas",
+                "select": [
+                    "Neterminuota",
+                    "Terminuota",
+                    "Kita"
+                ]
+            },
+            "maritalStatus": {
+                "text": "Šeimyninė padėtis",
+                "select": [
+                    "Nevedęs (netekėjusi)",
+                    "Vedęs (ištekėjusi)",
+                    "Išsiskyręs (-usi)"
+                ]
+            },
+            "phone": {
+                "text": "Telefonas",
+                "languages": {
+                    "lt": "+370",
+                    "se": "+46"
+                }
+            }
+        },
+        "step4": {
+            "table": {
+                "title": "Santrauka",
+                "fieldsToDisplay": [
+                    "amount",
+                    "term",
+                    "amount",
+                    "phone"
+                ]
+            },
+            "disclaimer": [
+                "1. patvirtinu, kad pateikta informacija yra teisinga, galiojanti ir išsami. Jeigu šis patvirtinimas neteisingas, \"Swedbank\", AB (toliau – Bankas) gali nesuteikti prašomo finansavimo arba vienašališkai nutraukti šios paraiškos pagrindu sudarytą sutartį;",
+                "2. patvirtinu, kad (i) susipažinau ir sutinku su Banko klientų aptarnavimo ir paslaugų teikimo bendrosiomis sąlygomis ir jų priedu Asmens duomenų tvarkymo principais, kurie skelbiami www.swedbank.lt bei pateikiami Banko klientų aptarnavimo padaliniuose,ir (ii) man yra žinoma, jog vadovaujantis minėtais Asmens duomenų tvarkymo principais Bankas turi teisę gauti mano asmens duomenis iš juos tvarkančių asmenų tam, kad Bankas galėtų įvertinti mano kreditingumą ir finansinę riziką bei valdyti įsiskolinimą suteikiant finansavimą man ar kitam asmeniui, už kurį laiduoju, ir tokio finansavimo naudojimosi laikotarpiu;",
+                "3. sutinku, kad Valstybinio socialinio draudimo fondo valdyba, VĮ Registrų centras, UAB „Creditinfo Lietuva“ ir finansų įstaigos Bankui paprašius pateiktų jam turimus mano asmens duomenis (vardą, pavardę, asmens kodą, adresą, pageidautų finansinių ir (arba) turtinių įsipareigojimų, dėl kurių buvo priimtas teigiamas ar neigiamas sprendimas, rūšis ir sumas, esamų finansinių ir (arba) turtinių įsipareigojimų rūšis, sumas ir vykdymo terminus, duomenis apie visų mano įsipareigojimų vykdymą, taip pat duomenis apie mano darbovietę, pajamas, jų rūšis bei šaltinius, šeiminę padėtį, vaikų skaičių ir kitus duomenis, būtinus kreditingumo vertinimui ir įsiskolinimo valdymui) tam, kad Bankas galėtų įvertinti mano kreditingumą ir finansinę riziką bei valdyti įsiskolinimą suteikiant finansavimą man ar kitam asmeniui, už kurį aš laiduoju, ir suteikto finansavimo naudojimosi laikotarpiu;",
+                "4. patvirtinu, kad man yra žinoma, jog Bankas mano kreditingumo vertinimą dėl prašomo man ar kitam asmeniui, už kurį laiduoju, suteikti vartojimo kredito gali atlikti ir sprendimą dėl kredito suteikimo priimti automatiniu būdu. Automatiniam sprendimo priėmimui Bankas gali rinkti ir tvarkyti aukščiau šiame dokumente nurodytus duomenis iš aukščiau nurodytų šaltinių bei kitų asmenų (pvz., valstybės registrų, finansų įstaigų, Lietuvos banko).** Pastaba: Jei nepageidaujate, kad sprendimas butu priimtas automatiniu budu, prašome tai nurodyti pildomos paraiškos Komentaru lauke.",
+                "5. patvirtinu, kad per paskutinius 10 metų nebuvau pripažintas nemokiu/bankrutavusiu, taip pat šios paraiškos pateikimo metu nesu pateikęs ir neketinu artimiausiu metu teikti atitinkamai institucijai prašymo dėl bankroto bylos man pačiam iškėlimo;",
+                "6. patvirtinu, kad man yra žinoma, jog man prašant suteikti draudimo ar kitą paslaugą, kurią teikia Banko grupei priklausantis asmuo, Bankas tokiam asmeniui perduos prašomai paslaugai teikti būtinus duomenis"
+            ],
+            "agreement": {
+                "agree": "Sutinku",
+                "disagree": "Nesutinku, kad \"Swedbank\", AB kreiptųsi į Sodrą"
+            },
+            "submit": "Siųsti paraišką"
+        }
+    }
+}
