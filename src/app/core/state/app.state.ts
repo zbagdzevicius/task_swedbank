@@ -18,33 +18,13 @@ export class AppState {
     }
 
     @Selector()
-    static getCredit(credit: Credit) {
-        return credit;
+    static getCredit(content: Content) {
+        return content.credit;
     }
     
     @Selector()
-    static getLanding(landing: Landing) {
-        return landing;
-    }
-
-    @Selector()
-    static getStep1(stepContent: Step1) {
-        return stepContent;
-    }
-
-    @Selector()
-    static getStep2(stepContent: Step2) {
-        return stepContent;
-    }
-
-    @Selector()
-    static getStep3(stepContent: Step3) {
-        return stepContent;
-    }
-
-    @Selector()
-    static getStep4(stepContent: Step4) {
-        return stepContent;
+    static getLanding(content: Content) {
+        return content.landing;
     }
 
     @Action(SetLanguage)

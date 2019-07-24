@@ -14,7 +14,7 @@ export class LanguageService {
 
   getContent(language: string) {
     this.http.get(`assets/${language}.json`)
-      .subscribe((content: Content) => {
+    .subscribe((content: Content) => {
         this.store.dispatch(new SetContent(content));
       }
       );

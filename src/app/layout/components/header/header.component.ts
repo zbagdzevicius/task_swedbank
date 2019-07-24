@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { environment } from '../../../../environments/environment';
+import { LanguageService } from 'src/app/core/services/language.service';
 
 @Component({
   selector: 'app-header',
@@ -10,9 +11,13 @@ export class HeaderComponent implements OnInit {
   @Input() currentLanguage: string;
   availableLanguages = environment.availableLanguages;
 
-  constructor() { }
+  constructor(private languageService: LanguageService) { }
 
   ngOnInit() {
+  }
+
+  changeLanguage(language: string) {
+    this.languageService.getContent(language);
   }
 
 }

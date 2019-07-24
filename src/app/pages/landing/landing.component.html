@@ -1,1 +1,8 @@
-<p>landing works!</p>
+<ng-container *ngIf="landing">
+    <app-title [text]="landing.title"></app-title>
+    <app-subtitle [text]="landing.headline"></app-subtitle>
+    <app-special-offer [specialOffer]="landing.specialOffer"></app-special-offer>
+    <app-duration [text]="landing.duration"></app-duration>
+    <app-button [text]="landing.applicationButton" [routerLink]="['/credit']" ></app-button>
+    <p>{{landing.note}}</p>
+</ng-container>

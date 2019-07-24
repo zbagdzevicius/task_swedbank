@@ -1,10 +1,11 @@
 <header>
+    <a [routerLink]="['/']">
+        <img src="assets/logo.png">
+    </a>
     <nav>
         <dl>
-            <dt 
-            *ngFor="let language of availableLanguages"
-            [ngClass]="{'currentLangue': language===currentLanguage}"
-            >
+            <dt *ngFor="let language of availableLanguages" [ngClass]="{'currentLangue': language===currentLanguage}"
+                (click)="changeLanguage(language)">
                 {{language}}
             </dt>
         </dl>

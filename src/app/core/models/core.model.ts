@@ -111,5 +111,6 @@ export interface Landing {
     specialOffer: string;
     benefitList: string[];
     duration: string;
+    applicationButton: string;
     note: string;
 }

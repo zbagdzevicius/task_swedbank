@@ -1,1 +1,12 @@
-<p>credit works!</p>
+<ng-container *ngIf="credit">
+    <app-title [text]="credit.title"></app-title>
+    <app-steps [steps]="credit.steps" [(currentStep)]="currentStep"></app-steps>
+    <ng-container [ngSwitch]="currentStep">
+        <app-step1 [form]="group.controls.step1" *ngSwitchDefault></app-step1>
+        <app-step2 [form]="group.controls.step2" *ngSwitchCase="2"></app-step2>
+        <app-step3 [form]="group.controls.step3" *ngSwitchCase="3"></app-step3>
+        <app-step4 [form]="group.controls.step4" *ngSwitchCase="4"></app-step4>
+    </ng-container>
+    <app-navigation [navigation]="credit.navigation"></app-navigation>
+    <app-info [text]="credit.info"></app-info>
+</ng-container>

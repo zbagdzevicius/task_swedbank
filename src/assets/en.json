@@ -1,5 +1,5 @@
 {
-    "lading": {
+    "landing": {
         "title": "Consumer loan",
         "headline": "Loans that help",
         "specialOffer": "Special offer: 50% discount on the fee with a code VASARA until 11.08.2019.",
@@ -9,13 +9,14 @@
             "It is possible to make early repayments without any additional fees."
         ],
         "duration": "It takes only 1-2 minutes to fill loan application.",
+        "applicationButton": "Fill in application",
         "note": "Please note, that by using financial services you assume financial obligations. Improper execution of financial obligations may adversely affect your credit history and raise the cost of borrowing, and it can also cause initiation of enforced recovery."
     },
     "credit": {
         "currency": "€",
         "title": "Small loan application",
         "navigation": {
-            "next": "Forward &#9664;",
+            "next": "Forward &#9654;",
             "back": "&#9664 Back;"
         },
         "info": "Submission of an application is not considered to be your obligation to sign a credit agreement. After you receive a proposal from the bank, we recommend considering it before taking a decision to conclude a credit agreement.",

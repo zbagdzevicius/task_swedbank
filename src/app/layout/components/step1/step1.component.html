@@ -1,0 +1,13 @@
+<form [formGroup]="form">
+    <app-range-slider [control]="'amount'" [range]="stepFields.application.amount">
+    </app-range-slider>
+
+    <app-range-slider [control]="'term'" [range]="stepFields.application.term">
+    </app-range-slider>
+
+    <app-select [control]="'payDay'" [label]="stepFields.application.payDay.text" [select]="stepFields.application.payDay.select">
+    </app-select>
+
+    <app-input [control]="'salary'" [label]="">
+    </app-input>
+</form>

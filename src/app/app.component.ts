@@ -10,7 +10,6 @@ import { LanguageService } from './core/services/language.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Swedbank task';
 
   @Select(AppState.getLanguage) language$: Observable<string>;
   language: string;

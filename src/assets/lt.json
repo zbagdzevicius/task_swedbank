@@ -9,13 +9,14 @@
             "Pasiskolintą sumą ar jos dalį galėsite grąžinti anksčiau laiko be papildomų mokesčių."
         ],
         "duration": "Paraišką užpildysite vos per keletą minučių.",
+        "applicationButton": "Pildyti paraišką",
         "note": "Atkreipiame dėmesį, kad naudodamiesi finansavimo paslaugomis Jūs prisiimate finansinius įsipareigojimus. Netinkamas finansinių įsipareigojimų vykdymas gali daryti neigiamą įtaką Jūsų kredito istorijai, pabranginti skolinimąsi, taip pat gali būti pradėtas priverstinis išieškojimas."
     },
     "credit": {
         "currency": "€",
         "title": "Vartojimo paskolos paraiška",
         "navigation": {
-            "next": "Pirmyn &#9664;",
+            "next": "Pirmyn &#9654;",
             "back": "&#9664; Atgal"
         },
         "info": "Paraiškos pateikimas nėra Jūsų įsipareigojimas pasirašyti kredito sutartį. Gavus banko pasiūlymą, rekomenduojame jį apsvarstyti prieš priimant sprendimą dėl kredito sutarties sudarymo.",
