@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { FormValidationService } from './form-validation.service';
+import { ErrorService } from 'src/app/layout/components/error-message/error.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FormService {
 
-  constructor(private formBuilder: FormBuilder, private formValidationService: FormValidationService) {
+  constructor(private formBuilder: FormBuilder, private errorService: ErrorService) {
 
   }
 
@@ -29,7 +29,7 @@ export class FormService {
     },
       {
         validator: [
-          // this.formValidationService
+          this.errorService.checkIfCreditAvailable('salary', 'amount')
         ]
       });
   }
@@ -40,12 +40,7 @@ export class FormService {
       position: ['', [Validators.required]],
       area: ['', [Validators.required]],
       employement: ['', [Validators.required]],
-    },
-      {
-        validator: [
-          // this.formValidationService
-        ]
-      });
+    });
   }
 
   initStep3() {

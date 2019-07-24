@@ -17,25 +17,28 @@
         "title": "Small loan application",
         "navigation": {
             "next": "Forward &#9654;",
-            "back": "&#9664 Back;"
+            "back": "&#9664 Back"
         },
         "info": "Submission of an application is not considered to be your obligation to sign a credit agreement. After you receive a proposal from the bank, we recommend considering it before taking a decision to conclude a credit agreement.",
         "steps": [
             "Application",
             "Additional data",
             "Personal data",
-            "Send application"
+            "Send application",
+            "Summary"
         ],
         "step1": {
             "application": {
                 "amount": {
                     "text": "Loan amount",
                     "from": 500,
+                    "step": 50,
                     "to": 20000
                 },
                 "term": {
                     "text": "Loan term",
                     "from": 6,
+                    "step": 1,
                     "to": 60
                 },
                 "payDay": {
@@ -50,7 +53,7 @@
             "Income": {
                 "subtitle": "Income and obligations data",
                 "warning": "Your income must be at least 350 EUR per month after tax. If you take a loan with a co-borrower, total income of a family (co-borrower) must be at least 700 EUR per month after tax.",
-                "amount": {
+                "salary": {
                     "text": "Monthly salary after taxes",
                     "more": "Indicate the earnings which you receive \"in hands\" (after taxes) per month."
                 }
@@ -125,13 +128,7 @@
         },
         "step4": {
             "table": {
-                "title": "Summary",
-                "fieldsToDisplay": [
-                    "amount",
-                    "term",
-                    "amount",
-                    "phone"
-                ]
+                "title": "Summary"
             },
             "disclaimer": [
                 "1. I confirm that the provided information is true, valid and complete. If this confirmation appears to be wrong, Swedbank, AB (hereinafter – the Bank) may refuse the requested financing or unilaterally terminate the agreement concluded on the basis of this application;",

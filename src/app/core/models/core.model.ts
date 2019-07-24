@@ -34,7 +34,6 @@ export interface Agreement {
 
 export interface Table {
     title: string;
-    fieldsToDisplay: string[];
 }
 
 export interface Step3 {
@@ -97,6 +96,7 @@ export interface PayDay {
 export interface Amount {
     text: string;
     from: number;
+    step: number;
     to: number;
 }
 

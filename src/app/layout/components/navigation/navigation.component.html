@@ -1,2 +1,5 @@
-<app-button [text]="navigation.back"></app-button>
-<app-button [text]="navigation.next"></app-button>
+<div class="container center navigation">
+    <app-button [text]="navigation.back" (click)="previousStep()" *ngIf="currentStep!==1"></app-button>
+    <app-button [text]="navigation.next" (click)="nextStep()" *ngIf="currentStep!==5"
+        [disabled]="lastValidStep===currentStep-1"></app-button>
+</div>

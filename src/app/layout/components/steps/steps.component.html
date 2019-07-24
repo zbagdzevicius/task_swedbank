@@ -1,6 +1,5 @@
 <dl>
-    <dt *ngFor="let step of steps; let i=index" (click)="changeStep(i+1)">
-        <span>{{i+1}}</span>
-        <label>{{step}}</label>
+    <dt *ngFor="let step of steps; let i=index" (click)="changeStep(i+1)" [ngClass]="{'completed': i < lastValidStep, 'active' : i === currentStepValue-1}">
+        {{step}}
     </dt>
 </dl>

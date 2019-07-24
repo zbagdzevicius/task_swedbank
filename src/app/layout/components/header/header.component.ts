@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit {
 
   changeLanguage(language: string) {
     this.languageService.getContent(language);
+    
   }
 
 }

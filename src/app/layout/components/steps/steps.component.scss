@@ -1,0 +1,22 @@
+
+dl{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    max-width: 400px;
+}
+dt{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.5em;
+        &.active{
+            background:#EE7023;
+            color: white;
+        }
+        &.completed{
+            background:rgb(102, 184, 102);
+            color: white;
+        }
+}

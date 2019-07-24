@@ -1,12 +1,27 @@
 <header>
-    <a [routerLink]="['/']">
-        <img src="assets/logo.png">
-    </a>
-    <nav>
-        <dl>
-            <dt *ngFor="let language of availableLanguages" [ngClass]="{'currentLangue': language===currentLanguage}"
-                (click)="changeLanguage(language)">
-                {{language}}
+    <nav class="desktop">
+        <dl class="container justify center-vertical">
+            <dt>
+                <a [routerLink]="['/']">
+                    <img src="assets/logo.png">
+                </a>
+            </dt>
+            <dt>
+                <app-button *ngFor="let language of availableLanguages"
+                (click)="changeLanguage(language)" [text]="language"></app-button>
+            </dt>
+        </dl>
+    </nav>
+    <nav class="mobile">
+        <dl class="container updown center-vertical">
+            <dt>
+                <a [routerLink]="['/']">
+                    <img src="assets/logo.png">
+                </a>
+            </dt>
+            <dt>
+                <app-button *ngFor="let language of availableLanguages"
+                (click)="changeLanguage(language)" [text]="language"></app-button>
             </dt>
         </dl>
     </nav>

@@ -1,12 +1,21 @@
 <ng-container *ngIf="credit">
-    <app-title [text]="credit.title"></app-title>
-    <app-steps [steps]="credit.steps" [(currentStep)]="currentStep"></app-steps>
-    <ng-container [ngSwitch]="currentStep">
-        <app-step1 [form]="group.controls.step1" *ngSwitchDefault></app-step1>
-        <app-step2 [form]="group.controls.step2" *ngSwitchCase="2"></app-step2>
-        <app-step3 [form]="group.controls.step3" *ngSwitchCase="3"></app-step3>
-        <app-step4 [form]="group.controls.step4" *ngSwitchCase="4"></app-step4>
-    </ng-container>
-    <app-navigation [navigation]="credit.navigation"></app-navigation>
+    <app-title [text]="credit.title" class="container center"></app-title>
+    <app-steps [steps]="credit.steps" [(currentStep)]="currentStep" [lastValidStep]="lastValidStep" class="container center"></app-steps>
+    <form [formGroup]="formGroups" *ngIf="formGroups">
+        <ng-container [ngSwitch]="currentStep">
+            <app-step1 [passedFormGroup]="formGroups.controls['step1']" [stepFields]="credit.step1" *ngSwitchDefault
+                (valid)="setValidStep(1)"></app-step1>
+            <app-step2 [passedFormGroup]="formGroups.controls['step2']" [stepFields]="credit.step2" *ngSwitchCase="2"
+                (valid)="setValidStep(2)"></app-step2>
+            <app-step3 [passedFormGroup]=" formGroups.controls['step3']" [stepFields]="credit.step3" *ngSwitchCase="3"
+                (valid)="setValidStep(3)"></app-step3>
+            <app-step4 [passedFormGroup]=" formGroups.controls['step4']" [stepFields]="credit.step4" *ngSwitchCase="4"
+                (valid)="setValidStep(4)">
+            </app-step4>
+            <app-summary [formGroups]="formGroups" [credit]="credit" *ngSwitchCase="5"></app-summary>
+        </ng-container>
+    </form>
+    <app-navigation [navigation]="credit.navigation" [(currentStep)]="currentStep" [lastValidStep]="lastValidStep">
+    </app-navigation>
     <app-info [text]="credit.info"></app-info>
 </ng-container>

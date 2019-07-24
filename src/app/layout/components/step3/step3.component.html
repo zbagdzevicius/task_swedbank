@@ -1,1 +1,24 @@
-<p>step3 works!</p>
+
+<form [formGroup]="passedFormGroup" class="container updown center-vertical">
+        <app-subtitle [text]="stepFields.subtitle"></app-subtitle>
+    <label>{{stepFields.contractType.text}}</label>
+    <select formControlName="contractType">
+        <option value=""></option>
+        <option *ngFor="let select of stepFields.contractType.select" [value]="select">{{select}}</option>
+    </select>
+    <app-error-message [control]="passedFormGroup.controls['contractType']"></app-error-message>
+
+
+    <label>{{stepFields.maritalStatus.text}}</label>
+    <select formControlName="maritalStatus">
+        <option value=""></option>
+        <option *ngFor="let select of stepFields.maritalStatus.select" [value]="select">{{select}}</option>
+    </select>
+    <app-error-message [control]="passedFormGroup.controls['maritalStatus']"></app-error-message>
+
+
+    <label>{{stepFields.phone.text}}</label>
+    <input type="number" formControlName="phone">
+    <app-error-message [control]="passedFormGroup.controls['phone']"></app-error-message>
+
+</form>

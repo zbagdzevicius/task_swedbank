@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Step3 } from 'src/app/core/models/core.model';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-step3',
@@ -8,8 +8,8 @@ import { Step3 } from 'src/app/core/models/core.model';
   styleUrls: ['./step3.component.scss']
 })
 export class Step3Component implements OnInit {
-  @Input() form: FormGroup;
   @Input() stepFields: Step3;
+  @Input() passedFormGroup: FormGroup;
 
   constructor() { }
 

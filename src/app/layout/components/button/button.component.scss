@@ -1,0 +1,45 @@
+button{
+  background:#EE7023;
+  color:#fff;
+  border:none;
+  position:relative;
+  font-size: 1.2rem;
+  height:60px;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  &:hover{
+    background:#fff;
+    color:#EE7023;
+    &:disabled{
+        background:grey;
+        color:white;
+    }
+    &:after, &:before{
+        width:100%;
+        transition:800ms ease all;
+      }
+  }
+  &:disabled{
+    background:grey;
+    opacity: 0.2;
+}
+    &:before,&:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #EE7023;
+    transition:400ms ease all;
+  }
+  &:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  
+}

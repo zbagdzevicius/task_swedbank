@@ -1,0 +1,57 @@
+<div class="container center">
+    <table>
+        <tr>
+            <th>{{credit.step1.application.amount.text}}</th>
+            <td>{{summaryStepValues.amount}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step1.application.payDay.text}}</th>
+            <td>{{summaryStepValues.payDay}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step1.application.term.text}}</th>
+            <td>{{summaryStepValues.term}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step1.Income.salary.text}}</th>
+            <td>{{summaryStepValues.salary}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step2.area.text}}</th>
+            <td>{{summaryStepValues.area}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step2.employement.text}}</th>
+            <td>{{summaryStepValues.employement}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step2.position.text}}</th>
+            <td>{{summaryStepValues.amount}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step2.education.text}}</th>
+            <td>{{summaryStepValues.education}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step3.contractType.text}}</th>
+            <td>{{summaryStepValues.contractType}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step3.maritalStatus.text}}</th>
+            <td>{{summaryStepValues.maritalStatus}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step3.phone.text}}</th>
+            <td>{{summaryStepValues.phone}}</td>
+        </tr>
+        <tr>
+            <th>{{credit.step4.agreement.agree}}</th>
+            <ng-container *ngIf="summaryStepValues.agreement.toString()==='true'; else disagree">
+                <td [innerHTML]="'&#10003;'"></td>
+            </ng-container>
+            <ng-template #disagree>
+                <td [innerHTML]="'&#8855;'"></td>
+            </ng-template>
+        </tr>
+    </table>
+</div>

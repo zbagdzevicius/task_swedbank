@@ -1,13 +1,35 @@
-<form [formGroup]="form">
-    <app-range-slider [control]="'amount'" [range]="stepFields.application.amount">
-    </app-range-slider>
+<form [formGroup]="passedFormGroup" class="container updown center-vertical">
 
-    <app-range-slider [control]="'term'" [range]="stepFields.application.term">
-    </app-range-slider>
+    <label>{{stepFields.application.amount.text}}</label>
+    {{amountValue}}
+    <div class="container">
+        <span>{{stepFields.application.amount.from}}</span>
+        <input formControlName="amount" type="range" [min]="stepFields.application.amount.from"
+            [max]="stepFields.application.amount.to" [step]="stepFields.application.amount.step" #amountInput
+            (input)="amountValue = amountInput.value">
+        <span>{{stepFields.application.amount.to}}</span>
+    </div>
+    <app-error-message [control]="passedFormGroup.controls['amount']"></app-error-message>
 
-    <app-select [control]="'payDay'" [label]="stepFields.application.payDay.text" [select]="stepFields.application.payDay.select">
-    </app-select>
+    <label>{{stepFields.application.term.text}}</label>
+    {{termValue}}
+    <div class="container">
+        <span>{{stepFields.application.term.from}}</span>
+        <input formControlName="term" type="range" [min]="stepFields.application.term.from"
+            [max]="stepFields.application.term.to" [step]="stepFields.application.term.step" #termInput
+            (input)="termValue = termInput.value">
+        <span>{{stepFields.application.term.to}}</span>
+    </div>
 
-    <app-input [control]="'salary'" [label]="">
-    </app-input>
+    <label>{{stepFields.application.payDay.text}}</label>
+    <select formControlName="payDay">
+        <option [value]=""></option>
+        <option *ngFor="let select of stepFields.application.payDay.select" [value]="select">{{select}}</option>
+    </select>
+
+
+    <app-subtitle [text]="stepFields.Income.subtitle"></app-subtitle>
+    <label>{{stepFields.Income.salary.text}}</label>
+    <input type="number" formControlName="salary">
+    <app-error-message [control]="passedFormGroup.controls['salary']"></app-error-message>
 </form>

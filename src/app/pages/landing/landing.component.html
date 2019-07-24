@@ -1,8 +1,12 @@
 <ng-container *ngIf="landing">
-    <app-title [text]="landing.title"></app-title>
-    <app-subtitle [text]="landing.headline"></app-subtitle>
-    <app-special-offer [specialOffer]="landing.specialOffer"></app-special-offer>
-    <app-duration [text]="landing.duration"></app-duration>
-    <app-button [text]="landing.applicationButton" [routerLink]="['/credit']" ></app-button>
-    <p>{{landing.note}}</p>
+    <div class="container updown center-vertical">
+        <app-title [text]="landing.title"></app-title>
+        <app-subtitle [text]="landing.headline"></app-subtitle>
+        <app-special-offer [specialOffer]="landing.specialOffer"></app-special-offer>
+        <app-benefits [benefits]="landing.benefitList"></app-benefits>
+        <app-duration [text]="landing.duration"></app-duration>
+        <app-button class="container center" [text]="landing.applicationButton" [routerLink]="['/credit']"></app-button>
+        <p>{{landing.note}}</p>
+    </div>
+
 </ng-container>

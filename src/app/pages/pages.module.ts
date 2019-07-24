@@ -7,7 +7,6 @@ import { CreditComponent } from './credit/credit.component';
 import { LayoutModule } from '../layout/layout.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FormService } from './services/form.service';
-import { FormValidationService } from './services/form-validation.service';
 
 
 @NgModule({
@@ -19,7 +18,6 @@ import { FormValidationService } from './services/form-validation.service';
     ReactiveFormsModule,
     FormsModule
   ], providers: [
-    FormValidationService,
     FormService
   ]
 })

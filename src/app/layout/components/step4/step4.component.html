@@ -1,1 +1,11 @@
-<p>step4 works!</p>
+<form [formGroup]="passedFormGroup" class="toogle container updown center-vertical">
+        <app-disclaimer [texts]="stepFields.disclaimer"></app-disclaimer>
+        
+        <title>{{stepFields.table.title}}</title>
+    <label for="choice1">{{stepFields.agreement.agree}}</label>
+    <input id="choice1"  type="radio" formControlName="agreement" name="agreement" value="true">
+
+    <label for="choice2">{{stepFields.agreement.disagree}}</label>
+    <input id="choice2"  type="radio" formControlName="agreement" name="agreement" value="false">
+    <app-error-message [control]="passedFormGroup.controls['agreement']"></app-error-message>
+</form>

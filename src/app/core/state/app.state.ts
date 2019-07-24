@@ -28,7 +28,7 @@ export class AppState {
     }
 
     @Action(SetLanguage)
-    setLanguage(context: StateContext<string>, { payload }: SetLanguage) {
+    setLanguage(context: StateContext<AppStateModel>, { payload }: SetLanguage) {
         context.patchState(payload);
     }
 

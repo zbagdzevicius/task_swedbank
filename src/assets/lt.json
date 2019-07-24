@@ -24,18 +24,21 @@
             "Paraiška",
             "Papildomi duomenys",
             "Asmeniniai duomenys",
-            "Siuntimas"
+            "Siuntimas",
+            "Apžvalga"
         ],
         "step1": {
             "application": {
                 "amount": {
                     "text": "Paskolos suma",
                     "from": 500,
+                    "step": 50,
                     "to": 20000
                 },
                 "term": {
                     "text": "Paskolos terminas",
                     "from": 6,
+                    "step": 1,
                     "to": 60
                 },
                 "payDay": {
@@ -125,13 +128,7 @@
         },
         "step4": {
             "table": {
-                "title": "Santrauka",
-                "fieldsToDisplay": [
-                    "amount",
-                    "term",
-                    "amount",
-                    "phone"
-                ]
+                "title": "Santrauka"
             },
             "disclaimer": [
                 "1. patvirtinu, kad pateikta informacija yra teisinga, galiojanti ir išsami. Jeigu šis patvirtinimas neteisingas, \"Swedbank\", AB (toliau – Bankas) gali nesuteikti prašomo finansavimo arba vienašališkai nutraukti šios paraiškos pagrindu sudarytą sutartį;",

@@ -1,1 +1,31 @@
-<p>step2 works!</p>
+<form [formGroup]="passedFormGroup" class="container updown center-vertical">
+    <app-subtitle [text]="stepFields.subtitle"></app-subtitle>
+    <label>{{stepFields.education.text}}</label>
+    <select formControlName="education">
+        <option [value]=""></option>
+        <option *ngFor="let select of stepFields.education.select" [value]="select">{{select}}</option>
+    </select>
+    <app-error-message [control]="passedFormGroup.controls['education']"></app-error-message>
+
+    <label>{{stepFields.employement.text}}</label>
+    <select formControlName="employement">
+        <option [value]=""></option>
+        <option *ngFor="let select of stepFields.employement.select" [value]="select">{{select}}</option>
+    </select>
+    <app-error-message [control]="passedFormGroup.controls['employement']"></app-error-message>
+
+    <label>{{stepFields.area.text}}</label>
+    <select formControlName="area">
+        <option [value]=""></option>
+        <option *ngFor="let select of stepFields.area.select" [value]="select">{{select}}</option>
+    </select>
+    <app-error-message [control]="passedFormGroup.controls['area']"></app-error-message>
+
+    <label>{{stepFields.position.text}}</label>
+    <select formControlName="position">
+        <option [value]=""></option>
+        <option *ngFor="let select of stepFields.position.select" [value]="select">{{select}}</option>
+    </select>
+    <app-error-message [control]="passedFormGroup.controls['position']"></app-error-message>
+
+</form>
