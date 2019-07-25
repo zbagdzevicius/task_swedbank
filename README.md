@@ -20,8 +20,18 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-
-
+## todo
+1. Rewrite shared states of credit steps between two way data binding components to ngxs appstate
+2. Create directives for inputs, selects
+3. Refactor codebase, improve naming, create variables.scss
+4. Use back-end (spring boot/flask) for restful API instead of plain json file.
+5. Cleanup project
+6. Unit tests (karma)
+7. User interface tests (selenium)
+8. Integeation tests
+9. Implement sentry error handling interceptor
+10. Rewrite scss by using good practises
+11. Refactor
 
 # task_swedbank
 Task
